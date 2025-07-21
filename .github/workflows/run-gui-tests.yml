@@ -1,0 +1,12 @@
+# .github/workflows/run-gui-tests.yml
+
+name: Run GUI Tests
+
+on:
+  pull_request: # Or any other trigger you want
+
+jobs:
+  run-reusable-gui-test:
+    uses: DigitalProductInnovationAndDevelopment/Code-Reviews-of-GUI-Tests/.github/workflows/playwright.yml@main
+    # By default, the GITHUB_TOKEN is passed automatically.
+    # secrets: inherit, IF NEEDED
